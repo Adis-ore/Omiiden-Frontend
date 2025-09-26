@@ -18,6 +18,7 @@ const Events = () => {
         const response = await fetch(`${backendUrl}/api/events`);
         if (!response.ok) throw new Error('Failed to fetch events');
         const data = await response.json();
+        console.log("Fetched events:", data.events); // Debug log
         setEvents(data.events || []);
       } catch (err) {
         setError(err.message);
@@ -89,7 +90,7 @@ const Events = () => {
                 <div key={event.id} className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group">
                   <div className="relative">
                     <img
-                      src={event.image_ur || event.image || '/placeholder.jpg'}
+                      src={event.image_url ? event.image_url : '/placeholder.jpg'}
                       alt={event.title}
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     />

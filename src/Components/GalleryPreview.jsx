@@ -100,7 +100,7 @@ const GalleryPreview = () => {
               {/* Image Container */}
               <div className="relative overflow-hidden">
                 <img
-                  src={item.image}
+                  src={item.image_url}
                   alt={item.title}
                   className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
