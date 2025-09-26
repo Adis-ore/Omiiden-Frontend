@@ -17,7 +17,7 @@ const Navbar = () => {
     };
   }, []);
 
-  // ✅ Rearranged Nav Items
+ 
   const navItems = [
     { name: "Team", path: "/team" },
     { name: "Gallery", path: "/gallery" },
@@ -48,7 +48,7 @@ const Navbar = () => {
             </div>
             <div className="hidden sm:block">
               <span className="text-xl lg:text-2xl font-bold text-red-700">
-                OMIDEN ORIGBO
+                OMIIDEN ORIGBO
               </span>
               <p className="text-xs text-green-700 font-semibold -mt-1 tracking-wide">
                 CULTURAL DANCE GROUP

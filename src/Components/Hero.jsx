@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Play, Calendar, Users, Star, ArrowDown, Music, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -121,9 +122,11 @@ const Hero = () => {
             <Play className="group-hover:scale-110 transition-transform" size={20} />
             <span>{heroSlides[currentSlide].cta}</span>
           </button>
-          <button className="px-8 py-4 border-2 border-green-500 text-green-400 rounded-lg font-bold hover:bg-green-500 hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
-            Learn About Us
-          </button>
+          <Link to="/about">
+            <button className="px-8 py-4 border-2 border-green-500 text-green-400 rounded-lg font-bold hover:bg-green-500 hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+              Learn About Us
+            </button>
+          </Link>
         </div>
 
         {/* Achievement Stats */}
