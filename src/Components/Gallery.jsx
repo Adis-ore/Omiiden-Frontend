@@ -77,7 +77,7 @@ const Gallery = () => {
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Explore the vibrant moments that define Omiiden Origbo. From powerful performances 
-            to cultural celebrations, witness our journey of preserving and promoting our heritage through dance.
+            to cultural celebrations, witness our journey of preserving and promoting our heritage through song.
           </p>
         </div>
 

@@ -51,7 +51,7 @@ const Navbar = () => {
                 OMIIDEN ORIGBO
               </span>
               <p className="text-xs text-green-700 font-semibold -mt-1 tracking-wide">
-                CULTURAL DANCE GROUP
+                CULTURAL SONG GROUP
               </p>
             </div>
           </div>

@@ -20,12 +20,12 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold">OMIIDEN ORIGBO</h3>
-                <p className="text-green-200 text-sm">Cultural Heritage Through Dance</p>
+                <p className="text-green-200 text-sm">Cultural Heritage Through Song</p>
               </div>
             </div>
             <p className="text-gray-200 mb-6 max-w-md">
               Preserving and celebrating our rich cultural traditions through powerful 
-              dance performances that tell the stories of our ancestors. United we stand 
+              song performances that tell the stories of our ancestors. United we stand 
               to promote our culture.
             </p>
             <div className="flex space-x-4">
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-300 text-sm text-center md:text-left">
-              © 2024 Omiiden Origbo. All rights reserved. | Preserving culture through dance.
+              © 2024 Omiiden Origbo. All rights reserved. | Preserving culture through song.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>

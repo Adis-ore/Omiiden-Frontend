@@ -60,14 +60,14 @@ const Team = () => {
           </h2>
           
           <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-8">
-            Meet the talented dancers who bring our cultural heritage to life through passionate performances and authentic storytelling.
+            Meet the talented singers who bring our cultural heritage to life through passionate performances and authentic storytelling.
           </p>
 
           {/* Team Stats */}
           <div className="flex justify-center space-x-8">
             <div className="text-center">
               <div className="text-2xl font-bold text-green-600">{teamMembers.length}</div>
-              <div className="text-sm text-gray-500">Talented Dancers</div>
+              <div className="text-sm text-gray-500">Talented Singers</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-red-600">5+</div>
@@ -151,7 +151,7 @@ const Team = () => {
             </div>
             <h3 className="text-2xl font-bold mb-4">United We Stand • To Promote Our Culture</h3>
             <p className="text-green-100 max-w-2xl mx-auto">
-              Each member of our team brings unique talents and passion to preserve and celebrate our rich cultural heritage through the art of dance.
+              Each member of our team brings unique talents and passion to preserve and celebrate our rich cultural heritage through the art of song.
             </p>
           </div>
         </div>
@@ -160,7 +160,7 @@ const Team = () => {
         <div className="mt-12 text-center">
           <div className="inline-flex items-center space-x-3 text-gray-500">
             <div className="w-12 h-px bg-gradient-to-r from-transparent to-green-300"></div>
-            <span className="text-sm font-medium">Omiden Origbo Cultural Dance Group</span>
+            <span className="text-sm font-medium">Omiden Origbo Cultural Song Group</span>
             <div className="w-12 h-px bg-gradient-to-l from-transparent to-red-300"></div>
           </div>
         </div>

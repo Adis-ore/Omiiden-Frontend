@@ -11,15 +11,15 @@ const Hero = () => {
   const heroSlides = [
     {
       title: "OMIIDEN ORIGBO",
-      subtitle: "Cultural Heritage Through Dance",
-      description: "Preserving and celebrating our rich cultural traditions through powerful dance performances that tell the stories of our ancestors",
+  subtitle: "Cultural Heritage Through Song",
+  description: "Preserving and celebrating our rich cultural traditions through powerful song performances that tell the stories of our ancestors",
       cta: "Watch Our Performances",
       bgImage: "/api/placeholder/1920/1080"
     },
     {
       title: "UNITED WE STAND",
       subtitle: "To Promote Our Culture",
-      description: "Join us in our mission to showcase the beauty and depth of cultural expressions through traditional and contemporary dance forms",
+  description: "Join us in our mission to showcase the beauty and depth of cultural expressions through traditional and contemporary song forms",
       cta: "Join Our Movement",
       bgImage: "/api/placeholder/1920/1080"
     },
@@ -35,7 +35,7 @@ const Hero = () => {
   const achievements = [
     { number: "5+", label: "Years of Excellence", icon: <Star /> },
     { number: "10+", label: "Cultural Performances", icon: <Music /> },
-    { number: "10+", label: "Talented Dancers", icon: <Users /> }
+  { number: "10+", label: "Talented Singers", icon: <Users /> }
   ];
 
   useEffect(() => {
@@ -177,7 +177,7 @@ const Hero = () => {
       <div className="absolute left-8 top-1/2 transform -translate-y-1/2 hidden lg:block">
         <div className="space-y-6 text-white">
           <div className="writing-mode-vertical text-sm tracking-wider text-green-400 font-semibold">
-            CULTURAL • HERITAGE • DANCE
+            CULTURAL • HERITAGE • SONG
           </div>
         </div>
       </div>

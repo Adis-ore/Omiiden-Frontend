@@ -320,7 +320,7 @@ const BookUs = () => {
                 </li>
                 <li className="flex items-start space-x-2">
                   <CheckCircle size={18} />{" "}
-                  <span>Professional & experienced dancers</span>
+                  <span>Professional & experienced singers</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <CheckCircle size={18} />{" "}
