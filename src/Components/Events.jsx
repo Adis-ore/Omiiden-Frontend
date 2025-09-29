@@ -76,8 +76,17 @@ const Events = () => {
 
       <div className="max-w-7xl mx-auto px-6 py-12">
         {loading ? (
-          <div className="text-center py-12">
-            <span className="text-gray-500 text-lg">Loading events...</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(3)].map((_, idx) => (
+              <div key={idx} className="animate-pulse bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="h-48 w-full bg-gray-200" />
+                <div className="p-6">
+                  <div className="h-5 w-1/2 bg-gray-200 rounded mb-2" />
+                  <div className="h-4 w-1/3 bg-gray-100 rounded mb-2" />
+                  <div className="h-4 w-1/4 bg-gray-100 rounded" />
+                </div>
+              </div>
+            ))}
           </div>
         ) : error ? (
           <div className="text-center py-12">

@@ -108,8 +108,17 @@ const Gallery = () => {
 
         {/* Gallery Grid */}
         {loading ? (
-          <div className="text-center py-12">
-            <span className="text-gray-500 text-lg">Loading gallery...</span>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {[...Array(6)].map((_, idx) => (
+              <div key={idx} className="animate-pulse bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="h-64 w-full bg-gray-200" />
+                <div className="p-4">
+                  <div className="h-4 w-1/2 bg-gray-200 rounded mb-2" />
+                  <div className="h-3 w-1/3 bg-gray-100 rounded mb-2" />
+                  <div className="h-3 w-1/4 bg-gray-100 rounded" />
+                </div>
+              </div>
+            ))}
           </div>
         ) : error ? (
           <div className="text-center py-12">
