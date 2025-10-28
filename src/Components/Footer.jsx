@@ -29,7 +29,7 @@ const Footer = () => {
               to promote our culture.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61581699086728" className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
                 <Facebook size={18} />
               </a>
               <a href="#" className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors">
@@ -66,11 +66,11 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <Phone className="text-red-300 mt-1" size={16} />
-                <p className="text-gray-200 text-sm">+234 706 529 5014</p>
+                <p className="text-gray-200 text-sm">+234 9046 265 621</p>
               </div>
               <div className="flex items-start space-x-3">
                 <Mail className="text-red-300 mt-1" size={16} />
-                <p className="text-gray-200 text-sm">omidenorigbo@gmail.com</p>
+                <p className="text-gray-200 text-sm">ereudenoka@gmail.com</p>
               </div>
             </div>
           </div>

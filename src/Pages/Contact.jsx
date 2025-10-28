@@ -78,7 +78,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-green-700">Call Us</h4>
-                    <p className="text-gray-600">+234 706 529 5014</p>
+                    <p className="text-gray-600">+234 904 6265 621</p>
                     <p className="text-sm text-gray-500">Available during business hours</p>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-green-700">Email Us</h4>
-                    <p className="text-gray-600">omidenorigbo@gmail.com</p>
+                    <p className="text-gray-600">ereudenoka@gmail.com</p>
                     <p className="text-sm text-gray-500">We'll respond within 48 hours</p>
                   </div>
                 </div>

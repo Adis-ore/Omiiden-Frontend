@@ -295,11 +295,11 @@ const BookUs = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="text-green-600" size={20} />
-                  <span>+234 706 529 5014</span>
+                  <span>+234 9046 265 621</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="text-red-600" size={20} />
-                  <span>omidenorigbo@gmail.com</span>
+                  <span>ereudenoka@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="text-green-600" size={20} />
