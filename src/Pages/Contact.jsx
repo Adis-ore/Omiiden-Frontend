@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { backendUrl } from '../App';
-import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
-
+import { MapPin, Phone, Mail, Clock, Send, Facebook, Instagram, Twitter, Youtube, Loader2 } from 'lucide-react';
+ 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -10,6 +10,7 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e) => {
     setFormData({
@@ -20,6 +21,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) return;
+    setIsSubmitting(true);
     try {
       const response = await fetch(`${backendUrl}/api/contact`, {
         method: 'POST',
@@ -37,6 +40,8 @@ const Contact = () => {
       }
     } catch (err) {
       alert('Network error. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -173,6 +178,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div>
@@ -184,6 +190,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
               </div>
@@ -197,6 +204,7 @@ const Contact = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    disabled={isSubmitting}
                   />
                 </div>
                 <div>
@@ -207,6 +215,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                     required
+                    disabled={isSubmitting}
                   >
                     <option value="">Select a subject...</option>
                     <option value="general-inquiry">General Inquiry</option>
@@ -230,15 +239,26 @@ const Contact = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                   placeholder="Tell us more about your inquiry..."
                   required
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-green-600 to-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-700 hover:to-red-700 transition-colors flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-green-600 to-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-green-700 hover:to-red-700 transition-colors flex items-center justify-center space-x-2 disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                <Send size={20} />
-                <span>Send Message</span>
+                {isSubmitting ? (
+                  <>
+                    <Loader2 className="animate-spin" size={20} />
+                    <span>Sending...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send size={20} />
+                    <span>Send Message</span>
+                  </>
+                )}
               </button>
 
               <p className="text-sm text-gray-500 text-center">
